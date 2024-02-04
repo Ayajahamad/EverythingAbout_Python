@@ -1,0 +1,111 @@
+--------------------Everything About Data_Types----------------------
+
+type() - used to find the type of a variable
+
+### 1. Numeric Types:
+- **int**: Integers are whole numbers without any decimal point. They can be positive, negative, or zero.
+- **float**: Floating-point numbers represent real numbers and contain decimal points or use exponential (scientific) notation.
+- **complex**: Complex numbers have a real part and an imaginary part represented as `a + bj`, where `a` is the real part and `b` is the imaginary part.
+
+### 2. Sequence Types:
+- **str**: Strings are immutable sequences of characters. They can be enclosed in single (`'`), double (`"`), or triple (`'''` or `"""`) quotes.
+- **list**: Lists are ordered collections of items enclosed in square brackets `[]`. They can contain elements of different data types and are mutable.
+- **tuple**: Tuples are similar to lists but are immutable, meaning their elements cannot be changed after creation. They are enclosed in parentheses `()`.
+
+### 3. Mapping Type:
+- **dict**: Dictionaries are unordered collections of key-value pairs. They are enclosed in curly braces `{}` and are mutable. Keys must be immutable (such as strings, numbers, or tuples), while values can be of any data type.
+
+### 4. Set Types:
+- **set**: Sets are unordered collections of unique elements enclosed in curly braces `{}`. They are mutable and can be modified using methods like `add()`, `remove()`, and `discard()`. Sets do not allow duplicate elements.
+- **frozenset**: Frozensets are similar to sets but are immutable, meaning their elements cannot be changed after creation.
+
+### 5. Boolean Type:
+- **bool**: Booleans represent truth values and can only have two possible values: `True` or `False`. They are often used in control flow and logical operations.
+
+### 6. None Type:
+- **NoneType**: The `None` type represents the absence of a value or a null value. It is commonly used to signify that a variable or function returns nothing or has no value assigned.
+
+### 7. Other Built-in Types:
+- **bytes**: Bytes objects are immutable sequences of single bytes. They are often used to handle binary data.
+- **bytearray**: Bytearrays are similar to bytes objects but are mutable.
+- **memoryview**: Memoryview objects provide a view of the memory of other objects, allowing you to access and manipulate their data.
+- **range**: Range objects represent a sequence of numbers and are commonly used for iteration and looping.
+
+Understanding these data types and their characteristics is essential for effective programming in Python. Each data type has its own set of operations and methods, allowing you to manipulate and process data efficiently based on its type. Additionally, Python's dynamic typing allows for flexibility in handling different data types within the same program or code block.
+
+
+---------------------------Type Conversion---------------------------------
+
+In Python, type conversion (also known as typecasting or coercion) refers to the process of converting a value from one data type to another. Python provides built-in functions and methods to perform type conversion. Here's a comprehensive overview of type conversion in Python:
+
+### 1. Implicit Type Conversion (Automatic Type Conversion):
+Python automatically converts data types in certain situations, typically during arithmetic operations or comparisons between different data types. This is also known as coercion. For example:
+
+```python
+# Implicit conversion during arithmetic operation
+x = 10  # integer
+y = 5.5  # float
+z = x + y  # Result will be a float
+```
+
+### 2. Explicit Type Conversion (Manual Type Conversion):
+In explicit type conversion, also known as casting, you can manually convert one data type to another using built-in functions or constructors. Here are the common methods for explicit type conversion:
+
+#### a. int(x): Converts x to an integer.
+```python
+x = 10.5
+integer_x = int(x)  # integer_x will be 10
+```
+
+#### b. float(x): Converts x to a floating-point number.
+```python
+x = 10
+float_x = float(x)  # float_x will be 10.0
+```
+
+#### c. str(x): Converts x to a string.
+```python
+x = 10
+string_x = str(x)  # string_x will be '10'
+```
+
+#### d. list(x): Converts x to a list.
+```python
+x = (1, 2, 3)  # tuple
+list_x = list(x)  # list_x will be [1, 2, 3]
+```
+
+#### e. tuple(x): Converts x to a tuple.
+```python
+x = [1, 2, 3]  # list
+tuple_x = tuple(x)  # tuple_x will be (1, 2, 3)
+```
+
+#### f. set(x): Converts x to a set.
+```python
+x = [1, 2, 2, 3, 3]  # list
+set_x = set(x)  # set_x will be {1, 2, 3}
+```
+
+#### g. dict(x): Converts x to a dictionary. `x` should be an iterable of key-value pairs.
+```python
+x = [('a', 1), ('b', 2)]  # list of tuples
+dict_x = dict(x)  # dict_x will be {'a': 1, 'b': 2}
+```
+
+#### h. bool(x): Converts x to a Boolean value.
+```python
+x = 10
+bool_x = bool(x)  # bool_x will be True
+```
+
+### Notes:
+- Type conversion might result in loss of data if the target data type cannot represent the full range of values of the source data type.
+- Conversion between certain types, such as incompatible types, may raise exceptions if not handled properly.
+- It's essential to handle exceptions properly when performing type conversion to ensure the stability and reliability of your programs.
+- Understanding type conversion is crucial for working with data of different types and performing operations across various data structures in Python.
+
+---------------------------------------------------------------------------------------------------------------
+
+ord( ): 
+The ord() function in Python accepts an argument for a string in unit length and returns the Unicode equivalence of the passed argument. In other words, the ord() function returns the integer of the Unicode point of the character in the Unicode case or the byte value in the case of an 8-bit argument.
