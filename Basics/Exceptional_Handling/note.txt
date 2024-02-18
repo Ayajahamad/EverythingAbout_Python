@@ -1,0 +1,128 @@
+---------------These are the some Common Errors in Python--------------
+
+In Python, errors are categorized into several types, which help developers identify and handle issues that occur during program execution. Here are some common types of errors in Python along with explanations and examples:
+
+1. SyntaxError: Syntax errors occur when the code violates the Python syntax rules. These errors prevent the interpreter from parsing the code properly.
+   
+   Example:
+   ```python
+   print "Hello, World!"
+   ```
+   Output:
+   ```
+   SyntaxError: Missing parentheses in call to 'print'. Did you mean print("Hello, World!")?
+   ```
+
+2. IndentationError: Indentation errors occur when the code block is not properly indented according to Python's indentation rules.
+
+   Example:
+   ```python
+   def my_function():
+   print("Hello")
+       print("World")
+   ```
+   Output:
+   ```
+   IndentationError: unexpected indent
+   ```
+
+3. NameError: Name errors occur when the interpreter encounters a name that is not defined in the current scope.
+
+   Example:
+   ```python
+   print(x)
+   ```
+   Output:
+   ```
+   NameError: name 'x' is not defined
+   ```
+
+4. TypeError: Type errors occur when an operation or function is applied to an object of an inappropriate type.
+
+   Example:
+   ```python
+   x = "5"
+   y = 2
+   print(x + y)
+   ```
+   Output:
+   ```
+   TypeError: can only concatenate str (not "int") to str
+   ```
+
+5. ValueError: Value errors occur when a built-in operation or function receives an argument with the right type but an inappropriate value.
+
+   Example:
+   ```python
+   int("abc")
+   ```
+   Output:
+   ```
+   ValueError: invalid literal for int() with base 10: 'abc'
+   ```
+
+6. IndexError: Index errors occur when attempting to access an index that is outside the bounds of a list or other sequence.
+
+   Example:
+   ```python
+   my_list = [1, 2, 3]
+   print(my_list[3])
+   ```
+   Output:
+   ```
+   IndexError: list index out of range
+   ```
+
+7. KeyError: Key errors occur when trying to access a dictionary key that does not exist.
+
+   Example:
+   ```python
+   my_dict = {'a': 1, 'b': 2}
+   print(my_dict['c'])
+   ```
+   Output:
+   ```
+   KeyError: 'c'
+   ```
+
+8. AttributeError: Attribute errors occur when trying to access or use an attribute that a particular object does not possess.
+
+   Example:
+   ```python
+   x = 5
+   print(x.append(1))
+   ```
+   Output:
+   ```
+   AttributeError: 'int' object has no attribute 'append'
+   ```
+
+9. ImportError: This error occurs when a module cannot be imported. It might happen due to missing modules or incorrect module names.
+
+    Example:
+    ```python
+    import non_existent_module
+    ```
+    Output:
+    ```
+    ImportError: No module named 'non_existent_module'
+    ```
+
+10. ZeroDivisionError: This error occurs when attempting to divide by zero.
+
+    Example:
+    ```python
+    result = 10 / 0
+    ```
+    Output:
+    ```
+    ZeroDivisionError: division by zero
+    ```
+
+11. **KeyboardInterrupt**: This error occurs when the user interrupts the execution of the program, typically by pressing Ctrl+C.
+
+    Example: While running a script that runs indefinitely, pressing Ctrl+C can raise this error.
+
+12. **MemoryError**: This error occurs when an operation runs out of memory.
+
+    Example: Trying to create a very large list or allocate too much memory can result in a MemoryError.
