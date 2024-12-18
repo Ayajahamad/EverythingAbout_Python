@@ -1,0 +1,1 @@
+Opened a Non Existing file with 'w' Mode..!

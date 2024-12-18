@@ -1,0 +1,89 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>b8eaddf1-b0b5-4920-8b97-12979a64ca2d</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>resume_upload\main.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>practice</Name>
+    <RootNamespace>practice</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="About_Logs.py" />
+    <Compile Include="API_Concept.py" />
+    <Compile Include="Composition.py" />
+    <Compile Include="Copy_Shallow_Deep.py" />
+    <Compile Include="Dictionarie.py" />
+    <Compile Include="Dunder_Methods.py" />
+    <Compile Include="Enum.py" />
+    <Compile Include="Error_Handling.py" />
+    <Compile Include="Fast_Api\index.py" />
+    <Compile Include="File_Handling.py" />
+    <Compile Include="Func_Annotations.py" />
+    <Compile Include="Iter_Gen.py" />
+    <Compile Include="Libraries\NumPy.py" />
+    <Compile Include="Libraries\Pandas2.py" />
+    <Compile Include="Libraries\Pandas3.py" />
+    <Compile Include="Libraries\Pands1.py" />
+    <Compile Include="Lists_Queue.py" />
+    <Compile Include="Loops.py" />
+    <Compile Include="Loops_task.py" />
+    <Compile Include="Match_statement.py" />
+    <Compile Include="math_functions.py" />
+    <Compile Include="OOPS.py" />
+    <Compile Include="OOPTask.py" />
+    <Compile Include="Decorators.py" />
+    <Compile Include="Async_Await.py" />
+    <Compile Include="Date_Time_Manipulation.py" />
+    <Compile Include="JustFor_Practice.py" />
+    <Compile Include="pracone.py" />
+    <Compile Include="Practice.py" />
+    <Compile Include="Practice1.py" />
+    <Compile Include="Programs1.py" />
+    <Compile Include="Programs2.py" />
+    <Compile Include="Programs3.py" />
+    <Compile Include="resume_upload\main.py" />
+    <Compile Include="Satndard_Libraries.py" />
+    <Compile Include="Sorting_Algo.py" />
+    <Compile Include="Strings.py" />
+    <Compile Include="Exceptions.py" />
+    <Compile Include="test_math_functions.py" />
+    <Compile Include="Tic_Tac_Toe.py" />
+    <Compile Include="ToDo.py" />
+    <Compile Include="__name__\File1.py" />
+    <Compile Include="__name__\File2.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Fast_Api\static\index.html" />
+    <Content Include="file_text.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Fast_Api\static\" />
+    <Folder Include="Libraries\" />
+    <Folder Include="Fast_Api\" />
+    <Folder Include="resume_upload\" />
+    <Folder Include="resume_upload\uploads\" />
+    <Folder Include="__name__\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
